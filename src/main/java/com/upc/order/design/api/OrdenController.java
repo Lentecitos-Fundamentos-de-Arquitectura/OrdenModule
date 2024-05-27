@@ -45,6 +45,10 @@ public class OrdenController {
         return ResponseEntity.ok(ordenMapper.toResource(orden));
     }
 
-   
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteOrder(@PathVariable Integer id){
+        ordenService.deleteById(Long.valueOf(id));
+        return ResponseEntity.noContent().build();
+    }
 
 }
