@@ -42,5 +42,10 @@ public class AnteojosOrdenController {
         return ResponseEntity.noContent().build();
     }
 
+      @GetMapping
+    public ResponseEntity<?> getAllOrders(){
+        return ResponseEntity.ok(anteojosOrdenService.findAll());
+    }
+
 
 }
