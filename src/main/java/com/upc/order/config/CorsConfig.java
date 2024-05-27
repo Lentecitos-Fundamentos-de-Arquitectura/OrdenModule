@@ -28,7 +28,7 @@ public class CorsConfig {
 
             @Override
             public void addViewControllers(org.springframework.web.servlet.config.annotation.ViewControllerRegistry registry) {
-                registry.addRedirectViewController("http://{host}:{port}/{path}", "https://{host}:{port}/{path}");
+                registry.addRedirectViewController("http://{host}:{port}/{path}", "https://{host}:{port}/{path}")
             }
         };
     }
