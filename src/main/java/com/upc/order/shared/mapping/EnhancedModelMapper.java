@@ -10,7 +10,7 @@ public class EnhancedModelMapper extends ModelMapper {
 
     @PostConstruct
     public void setup(){
-        this.getConfiguration().setMatchingStrategy(org.modelmapper.convention.MatchingStrategies.STRICT)
+        this.getConfiguration().setMatchingStrategy(org.modelmapper.convention.MatchingStrategies.STRICT);
     }
 
     public EnhancedModelMapper(){
