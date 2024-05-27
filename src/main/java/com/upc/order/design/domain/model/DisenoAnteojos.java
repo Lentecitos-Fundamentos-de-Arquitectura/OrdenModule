@@ -1,5 +1,4 @@
 package com.upc.order.design.domain.model;
-
 import lombok.Getter;
 import lombok.Setter;
 
