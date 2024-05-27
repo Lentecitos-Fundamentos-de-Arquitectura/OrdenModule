@@ -64,8 +64,5 @@ public class AnteojosOrdenServiceImpl implements AnteojosOrdenService {
         throw new FetchIdNotFoundException("AnteojosOrden", id.intValue());
     }
 
-    @Override
-    public List<AnteojosOrden> findAll() {
-        return anteojosOrdenRepository.findAll();
-    }
+   
 }
